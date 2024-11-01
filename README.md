@@ -4,4 +4,6 @@
 # 4d-tips-preemptive
 replica of 4D v15 R5 demo database, originally shown at the 2016 Developer Conference in Tokyo.
 
+Original work by Jean-Pierre Ribreau
+
 ![](https://github.com/user-attachments/assets/f3f9a110-ed17-48d1-96b0-caa14b04fe75)
