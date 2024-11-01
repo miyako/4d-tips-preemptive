@@ -117,9 +117,7 @@
 					"min": 0,
 					"max": 100,
 					"graduationStep": 20,
-					"numberFormat": "### ##0",
-					"fontFamily": ".Helvetica Neue DeskInterface",
-					"fontSize": 9
+					"numberFormat": "### ##0"
 				},
 				"Text": {
 					"type": "text",
@@ -920,7 +918,6 @@
 					"graduationStep": 35,
 					"numberFormat": "### ##0",
 					"focusable": false,
-					"fontFamily": "System Font Regular",
 					"fontSize": 9
 				},
 				"Text2": {
@@ -972,7 +969,6 @@
 					"step": 10,
 					"numberFormat": "### ##0",
 					"focusable": false,
-					"fontFamily": "System Font Regular",
 					"fontSize": 9
 				},
 				"_THERMO_F_MAXL": {
