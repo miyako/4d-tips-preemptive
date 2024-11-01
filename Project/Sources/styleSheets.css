@@ -1,0 +1,75 @@
+@media (prefers-color-scheme: light){
+	text.blue  {
+		stroke: #B3D9FF;	
+		fill: transparent;	
+		font-weight: bold;
+	}
+	radio.green {
+		stroke: #00D3B2;
+		fill: transparent;	
+		font-weight: bold;
+	}	
+	radio.red {
+		stroke: #FF013D;
+		fill: transparent;	
+		font-weight: bold;
+	}
+	input.red {
+		stroke: #FF013D;
+		fill: transparent;	
+		font-weight: bold;
+	}
+	text.red {
+		stroke: #FF013D;
+		fill: transparent;	
+		font-weight: bold;
+	}	
+	input.orange {
+		stroke: #FFAC00;
+		fill: transparent;	
+		font-weight: bold;
+	}
+	text.orange {
+		stroke: #FFAC00;
+		fill: transparent;	
+		font-weight: bold;
+	}
+}
+
+@media (prefers-color-scheme: dark){
+	text.blue  {
+		stroke: #B3D9FF;	
+		fill: transparent;	
+		font-weight: bold;
+	}
+	radio.green {
+		stroke: #00D3B2;
+		fill: transparent;	
+		font-weight: bold;
+	}	
+	radio.red {
+		stroke: #FF013D;
+		fill: transparent;	
+		font-weight: bold;
+	}
+	input.red {
+		stroke: #FF013D;
+		fill: transparent;	
+		font-weight: bold;
+	}
+	text.red {
+		stroke: #FF013D;
+		fill: transparent;	
+		font-weight: bold;
+	}	
+	input.orange {
+		stroke: #FFAC00;
+		fill: transparent;	
+		font-weight: bold;
+	}
+	text.orange {
+		stroke: #FFAC00;
+		fill: transparent;	
+		font-weight: bold;
+	}	
+}

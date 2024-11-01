@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?><preferences stamp="7">
+	<com.4d>
+		<web>
+			<standalone_server>
+				<configuration/>
+			</standalone_server>
+			<remote>
+				<configuration automatic_session_management="true" session_mode="3"/>
+			</remote>
+		</web>
+		<interface>
+			<developper display_toolbar="false"/>
+		</interface>
+		<database>
+			<cache keep_in_physical_memory="false"/>
+			<misc standard_xpath="false"/>
+		</database>
+		<compiler>
+			<options fat_binary="true" target="all"/>
+			<typage default_for_button="2" default_for_numeric="1"/>
+		</compiler>
+		<general startup_environnement="1"/>
+		<server>
+			<network>
+				<client_server/>
+				<options publication_name="testWorkerJP"/>
+			</network>
+		</server>
+	</com.4d>
+</preferences>

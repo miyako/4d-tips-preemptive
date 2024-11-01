@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE base SYSTEM "http://www.4d.com/dtd/2007/base.dtd" >
+<base name="preemptive" uuid="5673136BD1EFEE4B84C3787E221BB99E" collation_locale="fr">
+	<schema name="DEFAULT_SCHEMA"/>
+	<table name="Cities" uuid="FF1E7DDF6D2648E291A1A49FEF55FDC2" id="1" leave_tag_on_delete="true" hide_in_REST="true" prevent_journaling="true">
+		<field name="ZIP_Code" uuid="EB6FE19E201045478C196D2DE9D7E007" type="10" limiting_length="11" autogenerate="true" id="1" hide_in_REST="true"/>
+		<field name="State" uuid="EB059EB3936C4FFCADDE43FBAB0B827D" type="10" limiting_length="5" id="2" hide_in_REST="true"/>
+		<field name="Name" uuid="1D5639B4C7B347E8A85F74FC0129E7EE" type="10" limiting_length="25" id="3" hide_in_REST="true"/>
+		<field name="County" uuid="6AF6D9F7C4F84ACDA5A47A98890D458F" type="10" limiting_length="25" id="4" hide_in_REST="true"/>
+		<field name="Text" uuid="D2C1F84EC0BD4D408EEBC5E758514F88" type="3" id="5" hide_in_REST="true"/>
+		<field name="Photo" uuid="F4522382FFDB4D48A3F60D2BDD2EA728" type="3" id="6" hide_in_REST="true"/>
+		<field name="Population" uuid="6C4247068BC24973916CF04F92DC9D77" type="4" id="7" hide_in_REST="true"/>
+		<field name="Category" uuid="8CDF9160ECCA4EAD9DD2FF8DA0A98349" type="3" id="8" hide_in_REST="true"/>
+		<field name="Finale" uuid="A83861A5851F4462BCDCFE05B0687258" type="10" limiting_length="29" id="9" hide_in_REST="true"/>
+		<table_extra input_form="" output_form="">
+			<editor_table_info displayable_fields_count="9">
+				<color red="255" green="255" blue="255" alpha="0"/>
+				<coordinates left="48.52734375" top="21.45703125" width="120" height="248.62890625"/>
+			</editor_table_info>
+		</table_extra>
+	</table>
+	<table name="Counties" uuid="C186637623234CFE9E75880BA8914A0A" id="2" leave_tag_on_delete="true" hide_in_REST="true" prevent_journaling="true">
+		<field name="County" uuid="3932602A785344D0B432B08F64B3DAB6" type="10" limiting_length="30" id="1" hide_in_REST="true"/>
+		<field name="State" uuid="BA32338951844C9D9E53718A2EEA8A29" type="10" limiting_length="5" id="2" hide_in_REST="true"/>
+		<table_extra input_form="" output_form="">
+			<editor_table_info displayable_fields_count="3">
+				<color red="255" green="255" blue="255" alpha="0"/>
+				<coordinates left="392.8828125" top="10.62890625" width="120" height="116.29296875"/>
+			</editor_table_info>
+		</table_extra>
+	</table>
+	<table name="States" uuid="22DE9CD27BD84FDBA719193E9D90A4CF" id="3" leave_tag_on_delete="true" hide_in_REST="true" prevent_journaling="true">
+		<field name="Code" uuid="FA6C4FBDBD134960A3923D82C6CCC6A9" type="10" limiting_length="5" autogenerate="true" id="1" hide_in_REST="true"/>
+		<field name="State_Name" uuid="8E0BC0383DCE4D75980524F845901B9E" type="10" limiting_length="30" id="2" hide_in_REST="true"/>
+		<table_extra input_form="" output_form="">
+			<editor_table_info displayable_fields_count="3">
+				<color red="255" green="255" blue="255" alpha="0"/>
+				<coordinates left="253.55078125" top="9.70703125" width="120" height="114.59765625"/>
+			</editor_table_info>
+		</table_extra>
+	</table>
+	<table name="Photos" uuid="04503714FCDA4D0AB844F3BFD01EBC8E" id="4" prevent_journaling="true">
+		<field name="Code" uuid="190107533FC84A29BA126B5926D42C23" type="3" autogenerate="true" id="1" hide_in_REST="true"/>
+		<field name="Photo" uuid="DB34E6C67BC244378299FCDE0118DF70" type="12" id="2" hide_in_REST="true"/>
+		<table_extra input_form="" output_form="">
+			<editor_table_info displayable_fields_count="3">
+				<color red="255" green="255" blue="255" alpha="0"/>
+				<coordinates left="259.421875" top="207.19921875" width="120" height="104.51171875"/>
+			</editor_table_info>
+		</table_extra>
+	</table>
+	<table name="Texts" uuid="1B7A1C5F4A314FA2B95C8C447B644C25" id="5" leave_tag_on_delete="true" hide_in_REST="true" prevent_journaling="true">
+		<field name="Code" uuid="88D7EFC108994622A2A7DCDCA246538F" type="3" autogenerate="true" id="1" hide_in_REST="true"/>
+		<field name="Content" uuid="FB14BD070A954CE088E27A396170A92B" type="10" id="2" hide_in_REST="true">
+			<field_extra multi_line="true"/>
+		</field>
+		<field name="Keywords" uuid="6478209144DD4113BCBDD72382AB6327" type="18" blob_switch_size="2147483647" id="3" hide_in_REST="true"/>
+		<field name="Country" uuid="2EDDA66DF0244197A4DDE21D0B08B0DC" type="10" limiting_length="3" id="4" hide_in_REST="true"/>
+		<table_extra input_form="" output_form="">
+			<editor_table_info displayable_fields_count="4">
+				<color red="255" green="255" blue="255" alpha="0"/>
+				<coordinates left="396.7578125" top="142.24609375" width="120" height="133.3359375"/>
+			</editor_table_info>
+		</table_extra>
+	</table>
+	<relation uuid="29DA138FF1354ABC8A1E806AECD258BE" name_Nto1="Link_1" name_1toN="Link_1_return" state="1">
+		<related_field kind="source">
+			<field_ref uuid="EB059EB3936C4FFCADDE43FBAB0B827D" name="State">
+				<table_ref uuid="FF1E7DDF6D2648E291A1A49FEF55FDC2" name="Cities"/>
+			</field_ref>
+		</related_field>
+		<related_field kind="destination">
+			<field_ref uuid="FA6C4FBDBD134960A3923D82C6CCC6A9" name="Code">
+				<table_ref uuid="22DE9CD27BD84FDBA719193E9D90A4CF" name="States"/>
+			</field_ref>
+		</related_field>
+		<relation_extra entry_wildchar="false" entry_create="false" choice_field="0" entry_autofill="false">
+			<editor_relation_info via_point_x="0" via_point_y="0" prefers_left="false" smartlink="true">
+				<color red="255" green="255" blue="255" alpha="0"/>
+			</editor_relation_info>
+		</relation_extra>
+	</relation>
+	<relation uuid="290E9DE37C38444EAB5DB578F094E2DE" name_Nto1="Link_2" name_1toN="Link_2_return" state="1">
+		<related_field kind="source">
+			<field_ref uuid="D2C1F84EC0BD4D408EEBC5E758514F88" name="Text">
+				<table_ref uuid="FF1E7DDF6D2648E291A1A49FEF55FDC2" name="Cities"/>
+			</field_ref>
+		</related_field>
+		<related_field kind="destination">
+			<field_ref uuid="88D7EFC108994622A2A7DCDCA246538F" name="Code">
+				<table_ref uuid="1B7A1C5F4A314FA2B95C8C447B644C25" name="Texts"/>
+			</field_ref>
+		</related_field>
+		<relation_extra entry_wildchar="false" entry_create="false" choice_field="0" entry_autofill="false">
+			<editor_relation_info via_point_x="0" via_point_y="0" prefers_left="false" smartlink="true">
+				<color red="255" green="255" blue="255" alpha="0"/>
+			</editor_relation_info>
+		</relation_extra>
+	</relation>
+	<relation uuid="5E7E8FC743F948EA989A6E168715F9A1" name_Nto1="Link_3" name_1toN="Link_3_return" state="1">
+		<related_field kind="source">
+			<field_ref uuid="F4522382FFDB4D48A3F60D2BDD2EA728" name="Photo">
+				<table_ref uuid="FF1E7DDF6D2648E291A1A49FEF55FDC2" name="Cities"/>
+			</field_ref>
+		</related_field>
+		<related_field kind="destination">
+			<field_ref uuid="190107533FC84A29BA126B5926D42C23" name="Code">
+				<table_ref uuid="04503714FCDA4D0AB844F3BFD01EBC8E" name="Photos"/>
+			</field_ref>
+		</related_field>
+		<relation_extra entry_wildchar="false" entry_create="false" choice_field="0" entry_autofill="false">
+			<editor_relation_info via_point_x="0" via_point_y="0" prefers_left="false" smartlink="true">
+				<color red="255" green="255" blue="255" alpha="0"/>
+			</editor_relation_info>
+		</relation_extra>
+	</relation>
+	<index kind="regular" uuid="14BF326955B146C2BC1CBB014EE24529" type="1">
+		<field_ref uuid="6AF6D9F7C4F84ACDA5A47A98890D458F" name="County">
+			<table_ref uuid="FF1E7DDF6D2648E291A1A49FEF55FDC2" name="Cities"/>
+		</field_ref>
+	</index>
+	<index kind="regular" uuid="2C6A0821C0A44746B5DF9833F0C8AB12" type="1">
+		<field_ref uuid="A83861A5851F4462BCDCFE05B0687258" name="Finale">
+			<table_ref uuid="FF1E7DDF6D2648E291A1A49FEF55FDC2" name="Cities"/>
+		</field_ref>
+	</index>
+	<index kind="regular" uuid="59B0754BD0B1447689E7BF5424547256" type="1">
+		<field_ref uuid="3932602A785344D0B432B08F64B3DAB6" name="County">
+			<table_ref uuid="C186637623234CFE9E75880BA8914A0A" name="Counties"/>
+		</field_ref>
+	</index>
+	<index kind="regular" uuid="64E72297AA8743BFB2FF36B45582126B" type="7">
+		<field_ref uuid="88D7EFC108994622A2A7DCDCA246538F" name="Code">
+			<table_ref uuid="1B7A1C5F4A314FA2B95C8C447B644C25" name="Texts"/>
+		</field_ref>
+	</index>
+	<index kind="regular" uuid="80602DDDF72D471BBD0404DA40985AB3" type="1">
+		<field_ref uuid="EB059EB3936C4FFCADDE43FBAB0B827D" name="State">
+			<table_ref uuid="FF1E7DDF6D2648E291A1A49FEF55FDC2" name="Cities"/>
+		</field_ref>
+	</index>
+	<index kind="regular" uuid="A366CE67910048E98A77CCBBCAA79949" type="3">
+		<field_ref uuid="8CDF9160ECCA4EAD9DD2FF8DA0A98349" name="Category">
+			<table_ref uuid="FF1E7DDF6D2648E291A1A49FEF55FDC2" name="Cities"/>
+		</field_ref>
+	</index>
+	<index kind="regular" uuid="BEC90AAA0D1F444FA79E2C357CE0C7FC" type="1">
+		<field_ref uuid="190107533FC84A29BA126B5926D42C23" name="Code">
+			<table_ref uuid="04503714FCDA4D0AB844F3BFD01EBC8E" name="Photos"/>
+		</field_ref>
+	</index>
+	<index kind="regular" uuid="D8907B413E314E0C8A7AC50CF062A608" type="1">
+		<field_ref uuid="1D5639B4C7B347E8A85F74FC0129E7EE" name="Name">
+			<table_ref uuid="FF1E7DDF6D2648E291A1A49FEF55FDC2" name="Cities"/>
+		</field_ref>
+	</index>
+	<index kind="regular" uuid="FA9A0473914A46D9A173ED3AFB3CDC70" type="1">
+		<field_ref uuid="FA6C4FBDBD134960A3923D82C6CCC6A9" name="Code">
+			<table_ref uuid="22DE9CD27BD84FDBA719193E9D90A4CF" name="States"/>
+		</field_ref>
+	</index>
+	<base_extra data_file_path=":testWorkerJP.4DD" package_name="testWorkerJP" structure_file_name="testWorkerJP">
+		<journal_file journal_file_enabled="true"/>
+	</base_extra>
+</base>

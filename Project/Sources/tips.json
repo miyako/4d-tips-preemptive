@@ -1,0 +1,19 @@
+{
+	"First Record": "First Record",
+	"Previous Record": "Previous Record",
+	"Next Record": "Next Record",
+	"Last Record": "Last Record",
+	"First Page": "First Page",
+	"Last Page": "Last Page",
+	"Delete Record": "Delete Record",
+	"Cancel": "Cancel",
+	"OK": "Accept",
+	"Record Number": "Record Position within Selection",
+	"Done": "Done",
+	"Add Record": "Add a New Record",
+	"Show All": "Select All Records",
+	"Show Subset": "Select Highlighted Records",
+	"Query": "Query",
+	"Order By": "Order by",
+	"Delete Selectio": "Delete Highlighted Records"
+}
