@@ -1,4 +1,4 @@
-Project/DerivedData/*
-userPreferences.*
-Libraries/lib4d-arm64.dylib
-Data/*
+preemptive/userPreferences.*
+preemptive/Project/DerivedData/*
+preemptive/Data/*
+preemptive/Libraries/lib4d-arm64.dylib
